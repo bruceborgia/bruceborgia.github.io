@@ -1,8 +1,8 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
-avatar: /avatar.jpeg
+title: WYR
+description: 小小小小小小六的BLOG，MLer,DLer,CVer
+url: https://bruceborgia.github.io
+avatar: /wyr.jpeg
 paginate: 5
 permalink: pretty
 cover_image: /bg.jpeg
@@ -36,7 +36,7 @@ social:
   name: Songzi Vong
   links:
     - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://github.com/bruceborgia
 google_site_verification: xxxxx
 lang: en
 
@@ -54,6 +54,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: WangYR
+  url: https://github.com/bruceborgia/
+  email: bruceborgiab@gmail.com
