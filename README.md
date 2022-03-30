@@ -76,7 +76,7 @@ You can choose one of the following methods to install Not Pure Poole:
         ```yml
         plugins:
           - jekyll-remote-theme
-
+        
         remote_theme: vszhub/not-pure-poole
         ```
 
@@ -206,6 +206,10 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to your theme-gem, please edit the regexp in `not-pure-poole.gemspec` accordingly.
+
+# 注意：
+
+<font color="#FF675">BLOG 图像存储在image仓库中，粘贴图像链接时需要将blob 替换为raw</font>
 
 ## License
 
