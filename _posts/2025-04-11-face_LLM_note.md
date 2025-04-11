@@ -1,3 +1,9 @@
+---
+layout: post
+title: face_cv_note
+tags: [note]
+data: 2025-04-11 18:01 +0800
+---
 1. 为什么大模型大部分是decoder only
 因为decoder-only结构模型在没有任何微调数据的情况下，zero-shot的表现能力最好。而encoder-decoder则
 需要在一定量的标注数据上做multitask-finetuning才能够激发最佳性能。
