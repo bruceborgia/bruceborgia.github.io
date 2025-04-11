@@ -1,6 +1,6 @@
 ---
 layout: post
-title: face_cv_note
+title: face_llm_note
 tags: [note]
 data: 2025-04-11 18:01 +0800
 ---
