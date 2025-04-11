@@ -62,11 +62,11 @@ Makefile:149: recipe for target 'all' failed
 
 ```
 
-![image-20230525170957403](/home/yfzx/.config/Typora/typora-user-images/image-20230525170957403.png)
+![image-20230525170957403](/home/yfzx/Blog/images/blog_images/image-20230525170957403.png)
 
 解决方法：根据提示打开 "/seetaface6/index/OpenRoleZoo/include/orz/mem/pot.h",引用头文件functional
 
-![image-20230525171546468](/home/yfzx/.config/Typora/typora-user-images/image-20230525171546468.png)
+![image-20230525171546468](/home/yfzx/Blog/images/blog_images/image-20230525171546468.png)
 
 随后再次编译，显示编译成功
 
@@ -158,6 +158,8 @@ cd craft
 
    ![image-20230530175511077](/home/yfzx/.config/Typora/typora-user-images/image-20230530175511077.png)
 
+   ![lib64文件](https://github.com/bruceborgia/images/raw/main/blog_images/12.png)
+
    前面的`-l`选项告诉链接器要链接一个库文件，后面的`SeetaAgePredictor600`是库文件的名称。
 
    #####　-l参数的使用
@@ -177,7 +179,7 @@ cd craft
    ​		请注意，使用`-l`选项时，不需要指定库文件的前缀`lib`和后缀`.so`或`.lib`。链接器会根据操作系统和约定自动搜索		正确的库文件。
 
    # CMakeLists.txt文件调用OpenCV
-
+   
    ```
    find_package(OpenCV)
    include_directories(${OpenCV_INCLUDE_DIRS})
@@ -189,7 +191,7 @@ cd craft
    对于CMake中的`find_package(OpenCV)`命令，它会自动设置一些相关的变量，包括`OpenCV_INCLUDE_DIRS`，用于指定OpenCV的包含目录。
 
    还可以查看其他cmake自动设置的变量：
-
+   
    ```
    message(STATUS "OpenCV include dirs: ${OpenCV_INCLUDE_DIRS}")
    message(STATUS "OpenCV library dirs: ${OpenCV_LIBRARY_DIRS}")
@@ -199,7 +201,7 @@ cd craft
    ```
 
    在终端中使用命令：
-
+   
    ```
    cmake -DCMAKE_MESSAGE_LOG_LEVEL=STATUS ..
    ```
@@ -219,7 +221,7 @@ cd craft
       
 
    ##### 其他参数
-
+   
    ```
    find_package(OpenCV REQUIRED)
    ```
@@ -227,7 +229,7 @@ cd craft
    如果你不使用`REQUIRED`参数，即`find_package(OpenCV)`，如果找不到OpenCV，CMake会显示警告信息，但不会阻止构建过程。这在某些情况下可能是可行的，例如，如果你的项目有备用方案来处理OpenCV缺失的情况。	
 
    #####　完整版
-
+   
    ```
    #cmake最低版本号要求2.8
    cmake_minimum_required(VERSION 3.16)
@@ -270,5 +272,5 @@ cd craft
    
    
    ```
-
+   
    
